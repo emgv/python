@@ -8,6 +8,7 @@ def char_count(pstr):
     return occ
 
 def cows_and_bulls(num_str, answer):
+    print(occurr)
     i=0
     cows_ct=0
     bulls_ct=0
@@ -17,7 +18,7 @@ def cows_and_bulls(num_str, answer):
         n= num_str[i]
         if(n == answer[i]):
             cows_ct+=1
-            if(n in bulls): cows_ct-=1
+            if(n in bulls): bulls_ct-=1
         elif(n not in bulls and n in occurr):
             bulls[n]= 1
             bulls_ct+= occurr[n]
@@ -47,4 +48,4 @@ while(True):
             #8 => cows => 0, bulls => 2
             #3 => cows => 0, bulls => 2
             #4 => cows => 1, bulls => 2
-            #8 => cows => 1, bulls => 1
+            #8 => cows => 2, bulls => 1
