@@ -8,7 +8,6 @@ def char_count(pstr):
     return occ
 
 def cows_and_bulls(num_str, answer):
-    print(occurr)
     i=0
     cows_ct=0
     bulls_ct=0
@@ -28,7 +27,7 @@ def cows_and_bulls(num_str, answer):
     print('Cows: ' + str(cows_ct) + ' Bulls:' + str(bulls_ct))
 
 random.seed()
-secret= str(int(random.random() * 9999))
+secret= str(random.randint(1000,9999))
 occurr= char_count(secret)
 
 while(True):
